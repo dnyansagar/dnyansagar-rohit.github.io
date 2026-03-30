@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Dnyansagar | Bioinformatician</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+<style>
+body {
+    background-image: url('images/blue-oil-paint-textured-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5; /* light text */
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    margin-bottom: 50px;
+}
+/* 1. Make the header sub-headline black */
+header p {
+    color: #000000;
+    font-weight: 500;
+}
+
+/* 2. Make the research study titles white */
+.research-left h3 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Optional: helps text pop against the blue background */
+    margin-bottom: 15px;
+}
+section {
+    text-align: center;
+}
+/* 3. Ensure "Ongoing Work" and "Published Study" text are also easy to read */
+.research-right p, .research-right b {
+    color: #ffffff;
+}
+
+.comic-page {
+    background: black;
+    padding: 15px;
+    border: 1px solid #ddd;
+    cursor: zoom-in;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 2px 10px 20px rgba(0,0,0,0.2);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+}
+
+.comic-page:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.comic-page.is-zoomed {
+    max-width: none;
+    width: 100vw;
+    cursor: zoom-out;
+    z-index: 1000;
+    transform: scale(1);
+}
+
+.research-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.research-left,
+.research-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.research-right {
+    text-align: center;
+}
+.paper-image {
+    max-width: 500px;
+    width: 100%;
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+.paper-image:hover {
+    transform: scale(1.05);
+}
+.tech-stack {
+    max-width: 500px;
+    text-align: left;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .research-panel {
+        grid-template-columns: 1fr;
+    }
+}
+h2 {
+    background: #333;
+    color: white;
+    padding: 5px 15px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+section p {
+    text-align: left;
+    text-justify: inter-word; /* Improves spacing between words */
+    line-height: 1.6;        /* Adds a bit of breathing room for readability */
+    max-width: 800px;        /* Prevents lines from getting too long on wide screens */
+    margin: 20px auto;       /* Keeps the justified block centered on the page */
+}
+
+</style>
+</head>
+
+<body>
+<div class="main-wrapper">
+
+<header>
+    <h1>Hi, I'm Rohit Dnyansagar</h1>
+    <p>Bioinformatician | Single-Cell Specialist | Salzburg, Austria</p>
+    <nav>
+        <a href="https://www.linkedin.com/in/rohit-dnyansagar/">LinkedIn</a> | 
+        <a href="https://github.com/dnyansagar">GitHub</a> | 
+        <a href="mailto:rohit.dnyansagar@gmail.com">Email</a>
+    </nav>
+</header>
+
+<section>
+<h2>About Me</h2>
+
+<p>
+    I am a bioinformatician dedicated to extracting biological insights from complex, high-dimensional datasets. 
+    My expertise spans single-cell genomics, transcriptomics, and the development of robust computational pipelines for large-scale sequencing.
+    With a foundational background in pharmaceutical sciences, I bridge the gap between bench biology and dry-lab computation. 
+    My earlier research into evolutionary processes and phylogenetic analysis sparked a lifelong fascination with how small molecular changes drive massive biological shifts. 
+    Today, I focus on building reproducible workflows and integrating multi-omics data to translate "noise" into medical solutions.
+</p>
+
+</section>
+
+<section>
+<h2>My Journey</h2>
+<div style="display:flex; flex-direction:column; align-items:center; gap:40px;">
+    <img src="images/my_story1.png" class="comic-page">
+    <img src="images/my_story2.png" class="comic-page">
+    <img src="images/my_story3.png" class="comic-page">
+</div>
+</section>
+
+<hr>
+
+<section>
+<h2>Research Highlights</h2>
+
+<!-- PANEL 1 -->
+<div class="research-panel">
+    <div class="research-left">
+        <h3>Speciation Study</h3>
+        <img src="images/edwardsiella_story.png" class="comic-page">
+    </div>
+
+    <div class="research-right">
+        <a href="https://doi.org/10.1016/j.ympev.2018.04.035" target="_blank">
+            <img src="images/dispersal_speciation.png" class="paper-image">
+        </a>
+        <p><b>Published Study</b></p>
+
+        <div class="tech-stack">
+            <ul>
+                <li>Genome comparison</li>
+                <li>RNA-seq analysis</li>
+                <li>Visualization scripts</li>
+            </ul>
+            <h4>
+                My Technical Contribution 
+                (<a href="https://github.com/dnyansagar/edwardsiella" target="_blank">GitHub</a>)
+            </h4>
+            <h4>Tools Used</h4>
+            <ul>
+                <li>Python (pandas, scipy)</li>
+                <li>R (tidyverse, ggplot2)</li>
+                <li>Linux / Bash pipelines</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<!-- PANEL 2 -->
+<div class="research-panel">
+    <div class="research-left">
+        <h3>Axis Patterning</h3>
+        <img src="images/brachyury_ques.png" class="comic-page">
+        <img src="images/brachyury_res.png" class="comic-page">
+    </div>
+
+    <div class="research-right">
+        <a href="https://doi.org/10.1038/s41559-022-01905-w" target="_blank">
+            <img src="images/Brachyury_wnt.png" class="paper-image">
+        </a>
+        <p><b>Published Study</b></p>
+
+        <div class="tech-stack">
+            <ul>
+                <li>Multi-omics comparison</li>
+                <li>ChIP-seq analysis</li>
+                <li>Phylogenetics</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- PANEL 3 -->
+<div class="research-panel">
+    <div class="research-left">
+        <h3>Neuroblastoma & Epigenetics</h3>
+        <img src="images/epigennetics.png" class="comic-page">
+        <img src="images/neuroblastoma1.png" class="comic-page">
+        <img src="images/neuroblastoma2.png" class="comic-page">
+    </div>
+
+    <div class="research-right">
+        <a href="https://doi.org/10.1038/s41467-023-39210-0" target="_blank">
+            <img src="images/nb_multiomics.png" class="paper-image">
+        </a>
+        <p><b>Published Study</b></p>
+
+        <div class="tech-stack">
+            <ul>
+                <li>Single-cell multi-omics</li>
+                <li>scATAC-seq processing</li>
+                <li>Data integration</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- PANEL 4 -->
+<div class="research-panel">
+    <div class="research-left">
+        <h3>First Paper</h3>
+        <img src="images/molecular_evolution.jpg" class="comic-page">
+    </div>
+
+    <div class="research-right">
+        <a href="https://doi.org/10.1186/s12862-014-0270-4" target="_blank">
+            <img src="images/sponge_gpcs.png" class="paper-image">
+        </a>
+        <p><b>Published Study</b></p>
+    </div>
+</div>
+
+<!-- PANEL 5 -->
+<div class="research-panel">
+    <div class="research-left">
+        <h3>First NGS Experience</h3>
+        <img src="images/rna_seq.png" class="comic-page">
+    </div>
+
+    <div class="research-right">
+        <a href="https://doi.org/10.1371/journal.pgen.1006104" target="_blank">
+            <img src="images/drosophila_etv5.png" class="paper-image">
+        </a>
+        <p><b>Published Study</b></p>
+    </div>
+</div>
+
+<!-- PANEL 6 -->
+<div class="research-panel">
+    <div class="research-left">
+        <h3>Phylogenetic Contribution</h3>
+        <img src="images/coronin7_phylogenetics.png" class="comic-page">
+    </div>
+
+    <div class="research-right">
+        <a href="https://doi.org/10.1186/s12868-015-0151-9" target="_blank">
+            <img src="images/coronin7_phylogenetics.png" class="paper-image">
+        </a>
+        <p><b>Published Study</b></p>
+    </div>
+</div>
+
+<!-- PANEL 7 -->
+<div class="research-panel">
+    <div class="research-left">
+        <h3>Current Projects</h3>
+        <img src="images/kd_diets.jpg" class="comic-page">
+        <img src="images/kd_melanoma_nowatermark.jpg" class="comic-page">
+    </div>
+
+    <div class="research-right">
+        <p><b>Ongoing Work</b></p>
+        <div class="tech-stack">
+            <ul>
+                <li>Ketogenic diet & melanoma</li>
+                <li>Multi-omics integration</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<footer>
+<p align="center"><i>"The data tells a story, but the journey keeps growing."</i></p>
+</footer>
+
+</div>
+
+<script>
+document.querySelectorAll('.comic-page').forEach(page => {
+    page.addEventListener('click', () => {
+        page.classList.toggle('is-zoomed');
+        if (page.classList.contains('is-zoomed')) {
+            page.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    });
+});
+</script>
+
+</body>
+</html>

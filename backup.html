@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Dnyansagar | Bioinformatician</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> 
+<style>
+    body {
+        /* Your white brick wall image */
+        background-image: url('images/joe-woods-4Zaq5xY5M_c-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        background: rgba(255, 255, 255, 0.7); /* Translucent frost look */
+        backdrop-filter: blur(5px);
+        margin-bottom: 50px;
+    }
+
+	.comic-container { 
+    		display: flex;
+    		flex-direction: column; /* Stack vertically */
+    		align-items: center;    /* Center horizontally */
+    		justify-content: center;
+    		gap: 80px; 
+    		padding: 40px 0;
+    		width: 100%;
+	}
+
+	.comic-page {
+        	height: auto;
+        	background: black;
+        	padding: 15px; /* Creates a white border like a real photo */
+        	border: 1px solid #ddd;
+    		cursor: zoom-in; /* Shows the user they can click to enlarge */
+    		max-width: 800px; /* Limits width so it doesn't get too huge on ultrawide monitors */
+    		width: 90%;      /* Responsive for mobile */
+    		/* Keep your existing shadows and rotations here */
+
+        	/* The "Pinned to Wall" Shadow */
+        	box-shadow:
+            		2px 10px 20px rgba(0,0,0,0.2),
+            		0px 4px 6px rgba(0,0,0,0.1);
+
+        	/* Slight random rotations for that hand-placed feel */
+        	transform: rotate(-1deg);
+        	transition: transform 0.3s ease;
+    }
+	.comic-page.is-zoomed {
+    		max-width: none;     /* Overrides the 800px */
+    		width: 100vw;        /* Makes it full screen width */
+    		cursor: zoom-out;    /* Changes + to - */
+    		position: relative;
+    		z-index: 1000;       /* Makes sure it stays on top of other images */
+    		transform: scale(1); /* Resets any rotations you might have had */
+}
+
+    /* Every second comic tilts the other way */
+    .comic-page:nth-child(even) {
+        transform: rotate(1.5deg);
+    }
+
+    /* Interaction: When a headhunter hovers over it, it "levels out" */
+    .comic-page:hover {
+        transform: rotate(0deg) scale(1.02);
+        box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
+        z-index: 10;
+    }
+
+    /* Style for your headings to look like wall labels */
+    h2 {
+        background: #333;
+        color: white;
+        padding: 5px 15px;
+        display: inline-block;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    
+    .section-label {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+.paper-preview{
+    text-align:center;
+    margin-top:20px;
+}
+
+.paper-image{
+    max-width:500px;
+    width:90%;
+    border:3px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:transform 0.2s ease;
+}
+
+.paper-image:hover{
+    transform:scale(1.05);
+}
+
+.tech-stack{
+    max-width:600px;
+    margin:20px auto;
+    text-align:left;
+}
+</style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+
+	<header>
+        <h1>Hi, I'm Rohit Dnyansagar 🧬</h1>
+        <p>Bioinformatician | Single-Cell Specialist | Salzburg, Austria</p>
+        <nav>
+            <a href="https://www.linkedin.com/in/rohit-dnyansagar/">LinkedIn</a> | 
+            <a href="https://github.com/dnyansagar">GitHub</a> | 
+            <a href="mailto:rohit.dnyansagar@gmail.com">Email</a>
+        </nav>
+    	</header>
+<section id="intro">
+    <h2>About Me</h2>
+
+    <p>
+I am a bioinformatician dedicated to extracting biological insights from complex, high-dimensional datasets. 
+My expertise spans single-cell genomics, transcriptomics, and the development of robust computational pipelines for large-scale sequencing.
+With a foundational background in pharmaceutical sciences, I bridge the gap between bench biology and dry-lab computation. 
+My earlier research into evolutionary processes and phylogenetic analysis sparked a lifelong fascination with how small molecular changes drive massive biological shifts. 
+Today, I focus on building reproducible workflows and integrating multi-omics data to translate "noise" into medical solutions.
+    </p>
+</section>
+        <section id="story">
+            <h2>My Journey</h2>
+            <div class="comic-container">
+                <img src="images/my_story1.png" alt="Life in India" class="comic-page">
+                <img src="images/my_story2.png" alt="Sweden and Vienna" class="comic-page">
+                <img src="images/my_story3.png" alt="Salzburg Life" class="comic-page">
+            </div>
+        </section>
+
+        <hr>
+<!-- Research compilation -->
+<section id="research">
+    <h2>Research Highlights</h2>
+    <div class="comic-container">
+        <!-- Edwardsiella speciation study -->
+        <h3>Speciation Study</h3>
+        <img src="images/edwardsiella_story.png" alt="Edwardsiella study" class="comic-page">
+        <div class="paper-preview">
+            
+            <a href="https://doi.org/10.1016/j.ympev.2018.04.035" target="_blank">
+                <img src="images/dispersal_speciation.png"
+                alt="Edwardsiella paper abstract"
+                class="paper-image">
+            </a>
+            <p><b>Published Study</b><br>
+                Click the abstract to open the full paper.</p>
+                <div class="tech-stack">
+                    <h4>
+                        My Technical Contribution 
+                        (<a href="https://github.com/dnyansagar/edwardsiella" target="_blank">GitHub</a>)
+                    </h4>
+                    <ul>
+                        <li>Genome comparison and phylogenetic analysis</li>
+                        <li>RNA-seq data processing and differential expression analysis</li>
+                        <li>Custom visualization scripts for publication figures</li>
+                    </ul>
+                    <h4>Tools Used</h4>
+                    <ul>
+                        <li>Python (pandas, scipy)</li>
+                        <li>R (tidyverse, ggplot2)</li>
+                        <li>Linux / Bash pipelines</li>
+                    </ul>
+                </div>
+        <!-- Brachyury axis patterning study -->
+        <h3>Evolutionary Axis Patterning</h3>
+        <img src="images/brachyury_ques.png" alt="Brachyury Question" class="comic-page">
+        <img src="images/brachyury_res.png" alt="Brachyury Study" class="comic-page">
+        <div class="paper-preview">
+            
+            <a href="https://doi.org/10.1038/s41559-022-01905-w" target="_blank">
+                <img src="images/Brachyury_wnt.png"
+                alt="Axis petterning by brachyury paper abstract"
+                class="paper-image">
+            </a>
+            <p><b>Published Study</b><br>
+                Click the abstract to open the full paper.</p>
+                <div class="tech-stack">
+                    <h4>
+                        My Technical Contribution 
+                        (<a href="https://github.com/dnyansagar/gene_regulatory_network" target="_blank">GitHub</a>)
+                    </h4>
+                    <ul>
+                        <li>Multi-omic comparison across multiple key species</li>
+                        <li>RNA-seq data processing and differential expression analysis</li>
+                        <li>ChIP-seq data processing and visualization</li>
+                        <li>Phylogenetic analysis</li>
+                    </ul>
+                    <h4>Tools Used</h4>
+                    <ul>
+                        <li>Python (pandas, scipy)</li>
+                        <li>R (tidyverse, ggplot2)</li>
+                        <li>Linux / Bash pipelines</li>
+                    </ul>
+                </div>
+
+        <!-- Neuroblastoma epigenetic study -->
+        
+        <h3>Neuroblastoma & Epigenetics</h3>
+        <img src="images/epigennetics.png" alt="What is epigenetics?" class="comic-page">
+        <img src="images/neuroblastoma1.png" alt="Neuroblastoma Question" class="comic-page">
+        <img src="images/neuroblastoma2.png" alt="Neuroblastoma Study" class="comic-page">
+        <div class="paper-preview">
+            <a href="https://doi.org/10.1038/s41467-023-39210-0" target="_blank">
+                <img src="images/nb_multiomics.png"
+                alt="Neuroblastoma metastasis in bone marrow"
+                class="paper-image">
+            </a>
+            <p><b>Published Study</b><br>
+                Click the abstract to open the full paper.</p>
+                <div class="tech-stack">
+                    <h4>
+                        My Technical Contribution 
+                        (<a href="https://github.com/dnyansagar/neuroblastoma_epigenetics/tree/main/scatac" target="_blank">GitHub</a>)
+                    </h4>
+                    <ul>
+                        <li>Single cell multi-omic comparison of bone marrow samples</li>
+                        <li>scATAC-seq data processing and visualization</li>
+                        <li>Multi-omic integration of scATAC-seq and scRNA-seq</li>
+                    </ul>
+                    <h4>Tools Used</h4>
+                    <ul>
+                        <li>Python (pandas, scipy)</li>
+                        <li>R (tidyverse, ggplot2)</li>
+                        <li>Linux / Bash pipelines</li>
+                    </ul>
+                </div>
+        
+        <!-- GPCR repertoire  -->
+        <h3>First paper</h3>
+        <div class="paper-preview">
+            <a href="https://doi.org/10.1186/s12862-014-0270-4" target="_blank">
+                <img src="images/sponge_gpcs.png" 
+                alt="GPCR repertoire in marine sponge Amphimdeon quenslandica" 
+                class="paper-image">
+                <p><b>Published Study</b><br>
+                    Click the abstract to open the full paper.</p>
+        <!-- ETV5 knockdown  -->
+        <h3>First NGS experience</h3>
+        <div class="paper-preview">
+            <a href="https://doi.org/10.1371/journal.pgen.1006104" target="_blank">
+                <img src="images/drosophila_etv5.png" 
+                alt="RNA-seq analysis of ETV5 knockdown"
+                class="paper-image">
+                <p><b>Published Study</b><br>
+                    Click the abstract to open the full paper.</p>
+        <!-- Coronin 7 phylogenetic analysis  -->
+        <h3>Contributed by conducting phylogenetic analysis</h3>
+        <div class="paper-preview">
+            <a href="https://doi.org/10.1186/s12868-015-0151-9" target="_blank">
+                <img src="images/coronin7_phylogenetics.png" 
+                alt="Phylogeentic analysis of Coronin 7" 
+                class="paper-image">
+                <p><b>Published Study</b><br>
+                    Click the abstract to open the full paper.</p>
+
+        <!-- Ketogeneic diets study  -->
+        <h3>Current projects</h3>
+        <img src="images/kd_diets.png" alt="Compare Ketogenic diets" class="comic-page">
+        <img src="images/kd_melanoma_nowatermark.png" alt="Effect of Ketogenic diet on Melanoma" class="comic-page">
+        
+    </div>
+</section>
+<section id="expertise">
+    <h2>Technical Stack</h2>
+    <div class="skills-grid">
+        <div>
+        </div><h3>Analysis</h3>
+        <ul>
+            <li>Single-cell ATAC-seq</li>
+            <li>NGS Pipeline Development</li>
+            <li>Transcriptomics</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Tools</h3>
+        <ul>
+            <li>Nextflow / Bash</li>
+            <li>Python (Scanpy)</li>
+            <li>R (Seurat)</li></ul>
+        </div>
+    </div>
+</section>
+<footer>
+</footer><p align="center"><i>"The data tells a story, but the journey keeps growing."</i></p>
+</footer>
+</div>
+<script>
+document.querySelectorAll('.comic-page').forEach(page => {
+page.addEventListener('click', () => {
+page.classList.toggle('is-zoomed');
+// Optional: Smoothly scroll the zoomed image into view
+if (page.classList.contains('is-zoomed')) {
+page.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+});
+});
+</script>
+</body>
+</html>
